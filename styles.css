@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+#sudoku{
+    margin-top: 100px;
+}
+.sudoku{
+    position: relative;
+	margin-top: 20px;
+	position: absolute;
+	z-index: 5;
+	width: 880px;
+	height:  850px;
+	background-image: url("../img/sudoku.png");
+    background-size: contain;
+
+}
+.square{
+    background-color: rgb(133, 232, 232);
+    margin-left: 40px;
+    width: 780px;
+    height: 83px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border:  2px solid black;
+    
+}
+.boxStyle{
+
+    background-color: rgb(255, 245, 45);
+    font-size: 60px;
+    text-align: center;
+    border:1px solid black;
+    height: 80px;
+    width: 80px;
+    
+}
+
+.mode{
+    position: relative;
+    display: block;
+    left:40%;
+    width:  400px;
+    margin-top: 30px;
+    height: 80px;
+    font-size: 60px;
+    color: aliceblue;
+    text-align: center;   
+    border-radius: 50px;
+}
+.easyMode{
+background-color: rgb(19, 255, 19);
+}
+.mediumMode{
+background-color: #ffd429;
+}
+.hardMode{
+background-color: rgb(184, 16, 16);
+}
+
