@@ -1,12 +1,12 @@
 import { renderSudoku } from "./renderSudoku.js";
 import { createElement } from "../helper/createElement.js";
-
+import './styles.css'
  export let gameProcess = false;
  export let gameIsLoaded = false;
 
- export const easyMode = createElement("button",{class: "easyMode mode"}, "Easy")
- export const mediumMode = createElement("button",{class: "mediumMode mode"}, "Medium")
- export const hardMode = createElement("button",{class: "hardMode mode"}, "Hard")
+ const easyMode = createElement("button",{class: "easyMode mode"}, "Easy")
+ const mediumMode = createElement("button",{class: "mediumMode mode"}, "Medium")
+ const hardMode = createElement("button",{class: "hardMode mode"}, "Hard")
 export const modes = createElement("div",{class: "modes"},easyMode,mediumMode,hardMode)
 
   

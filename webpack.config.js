@@ -8,8 +8,21 @@ module.exports = {
         path: path.resolve(__dirname, './dist'),
         clean:true
     },
+    devtool: 'inline-source-map',
+    devServer: {
+        static: "./dist",
+        hot:true,
+    },
+    module: {
+        rules: [
+          {
+            test: /\.css$/,
+            use: ['style-loader', 'css-loader'],
+          },
+        ],
+      },
     plugins: [new HtmlWebpackPlugin({
-        template:" ./index.html"
+        template:"./index.html"
     }),
 ],
 }
